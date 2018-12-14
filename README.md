@@ -1,6 +1,8 @@
 # vuedemo
 
-> A Vue.js project
+> A Vue.js project  
+> A initialization project  
+> jQuery & Bootstrap4 included  
 
 ## Build Setup
 
