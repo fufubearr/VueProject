@@ -3,6 +3,7 @@
 > A Vue.js project  
 > A initialization project  
 > jQuery & Bootstrap4 included  
+> ElementUI included  
 
 ## Build Setup
 
