@@ -3,13 +3,16 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap'
+// import 'bootstrap/dist/css/bootstrap.css'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
