@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+}
+
+.header {
+  height: 50px;
+  background: pink;
+}
+
+.content {
+  padding: 30px;
+  background: yellow;
+}
+
+.footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  height: 50px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: yellow;
+}

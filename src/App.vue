@@ -1,7 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{name: '首頁'}">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/page">Page</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <router-view/> -->
+    <router-view name="menu"></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -13,11 +30,11 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>

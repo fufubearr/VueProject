@@ -5,8 +5,9 @@ import Vue from 'vue'
 import 'normalize.css/normalize.css' // CSS resets
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-// import 'bootstrap'
-// import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+import '@/styles/index.css' // global css
 
 // Ajax
 import axios from 'axios'
